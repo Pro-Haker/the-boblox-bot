@@ -45,7 +45,7 @@ async def eightball(interaction: discord.Interaction, question: str):
 
 @client.tree.command(name="rps", description="Play rock paper scissors with the bot!")
 @app_commands.describe(user_move="Your move")
-async def eightball(interaction: discord.Interaction, user_move: str):
+async def rps(interaction: discord.Interaction, user_move: str):
     if user_move not in ["rock", "paper", "scissors"]:
         await interaction.response.send_message(f"Invalid move!", ephemeral = True)
         return
