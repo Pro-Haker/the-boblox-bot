@@ -24,7 +24,7 @@ async def roll(interaction: discord.Interaction, sides: int):
     try:
         die_result = choice(range(1, sides + 1))
     except IndexError:
-        await interaction.response.send_message(f"Your die must have at least 2 sides!", ephemeral = True)
+        await interaction.response.send_message(f"Your die must have at least 1 sides!", ephemeral = True)
     await interaction.response.send_message(f"{interaction.user.mention} rolled a {die_result} on a {sides}-sided die!")
 
 @client.tree.command(name="8ball", description="Ask the 8 ball a question!")
