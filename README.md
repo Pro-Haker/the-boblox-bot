@@ -1,2 +1,2 @@
 # The King of Random
-This is a Discord bot that's not supposed to be good or useful. I'm just learning.
+A Discord bot made for the Zagrajmy w Bobloxa Discord server! It probably won't work ideally on your server, so don't even try lmao :3
